@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import LoginForm from '../LoginForm/LoginForm';
 
-import '../LoginPage/login-page.css';
 
 class LoginPage extends Component {
   submit = data => {

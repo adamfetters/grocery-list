@@ -4,8 +4,6 @@ import Validator from 'validator';
 import InlineError from '../Messages/InlineError';
 import PropTypes from 'prop-types';
 
-import '../LoginForm/login-form.css';
-
 class LoginForm extends Component {
   state = {
     data: {
