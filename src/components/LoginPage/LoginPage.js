@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import LoginForm from '../LoginForm/LoginForm';
 
+import '../LoginPage/login-page.css';
+
 class LoginPage extends Component {
   submit = data => {
     console.log(data);
@@ -9,7 +11,7 @@ class LoginPage extends Component {
   render() {
     return (
       <div>
-        <h1>Login Page</h1>
+        <h1 className="login-header">Login Page</h1>
 
         <LoginForm submit={this.submit} />
       </div>

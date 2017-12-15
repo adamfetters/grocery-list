@@ -4,6 +4,8 @@ import Validator from 'validator';
 import InlineError from '../Messages/InlineError';
 import PropTypes from 'prop-types';
 
+import '../LoginForm/login-form.css';
+
 class LoginForm extends Component {
   state = {
     data: {
@@ -41,7 +43,7 @@ class LoginForm extends Component {
     const { data, errors } = this.state;
 
     return (
-      <Form onSubmit={this.onSumbit}>
+      <Form className="login-form" onSubmit={this.onSumbit}>
         <Form.Field error={!!errors.email}>
           <label htmlFor="email">Email</label>
           <input
